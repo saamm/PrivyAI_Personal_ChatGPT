@@ -1,0 +1,49 @@
+chmod 400 "ec2-key-pair.pem"
+
+icacls "ec2-key-pair.pem" /inheritance:r
+icacls "ec2-key-pair.pem" /remove "BUILTIN\Users"
+icacls "ec2-key-pair.pem" /remove "NT AUTHORITY\Authenticated Users"
+icacls "ec2-key-pair.pem" /grant:r "$($env:USERNAME):R"
+ssh -i "ec2-key-pair.pem" ubuntu@ec2-34-229-105-80.compute-1.amazonaws.com
+
+
+sudo apt install python3-venv
+
+sudo apt install -y nvidia-container-toolkit
+
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+docker exec -it ollama ollama pull gemma2:2b
+
+docker exec -it ollama ollama pull llama3:latest
+
+docker exec -it ollama ollama pull mistral:7b
+
+docker exec -it ollama ollama list
+
+docker run -d --name mongodb -p 27017:27017 mongo
+
+Open ports 11434, 27017, 8501 (EC2 -> Security group)
+
+Connect to MongoDB server from local MongoDB compass
+
+git clone <>
+
+cd dir
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+nano .env
+
+paste .env
+
+streamlit run main.py
+
+http://34.229.105.80:8501
