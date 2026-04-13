@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 import streamlit as st
 
 from services.get_models_list import get_ollama_models_list
@@ -10,7 +14,7 @@ from db.conversations import (
     get_all_conversations,
 )
 
-st.set_page_config(page_title="Convo Pro", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Privy AI", page_icon="💬", layout="centered")
 st.title("🤖 Local ChatGPT Clone")
 
 # ---- Models ----
