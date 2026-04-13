@@ -161,17 +161,6 @@ Users can dynamically select models at runtime via UI.
 
 ---
 
-## ⭐ Why This Project Matters
-
-This project demonstrates:
-
-* Real-world LLM system design
-* Cloud deployment with GPU infrastructure
-* Integration of multiple AI models in a single application
-* End-to-end ML system engineering
-
----
-
 ## 🙌 Acknowledgements
 
 Built as part of hands-on exploration into **LLM systems, agentic AI, and scalable ML infrastructure**.
