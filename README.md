@@ -1,14 +1,12 @@
-# PrivyAI_Personal_ChatGPT
-
-# 🚀 ConvoPro – Local Multi-Model ChatGPT Clone
+# 🚀 PrivyAI_Personal_ChatGPT – Local Multi-Model ChatGPT Clone
 
 ---
 
 ## 🧠 Overview
 
-**ConvoPro** is a local, multi-model AI chat application that allows users to interact with different large language models (LLMs) through a unified interface.
+**PrivyAI** is a local, multi-model AI chat application that allows users to interact with different large language models (LLMs) through a unified interface.
 
-Unlike typical chatbot apps, ConvoPro enables **dynamic model selection**, persistent conversation memory, and GPU-accelerated inference — all deployed on a cloud environment.
+Unlike typical chatbot apps, PrivyAI enables **dynamic model selection**, persistent conversation memory, and GPU-accelerated inference — all deployed on a cloud environment.
 
 ---
 
